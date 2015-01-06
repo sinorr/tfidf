@@ -1,0 +1,17 @@
+##TF-IDF
+
+---
+This algorithm is to calcluate the importance of word in an article , so that we can consider some words with high importance as key words of this article .
+
+### How we tell high-speed rail from passenger trains ? 
+The characters of trains are so many , such as long size , running on track , max passenger capacity etc . Of course , the high-speed rail has these characters too . Except these characters , high-speed rail has two more characters , high-speed and ticket-expensive . Thus long size , running on track and max passenger capacity are common characters which we cant tell high-speen rail from common passenger train , while high-speed and ticket-expensive are the unique characters that high-speed rail has . 
+The main idea of tfidf is to get rid of the common characters which everyone can have and consider the unique characters as the key words of this object .
+
+### formula 
+
+```
+W(d) = f(w,d) * log(|D|/f(w,D))
+```
+* f(w,d) represents the frequence of word in the article where the word is .
+* |D| is the number of articles in whole corpus .
+* f(w,D) is the number of articles which contains the word in whole corpus .
